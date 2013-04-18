@@ -1,7 +1,7 @@
 <?php
 
     // txt-db-api library: http://www.c-worker.ch/txtdbapi/index_eng.php
-    require_once("/usr/class/cs155/projects/hw_and_proj/proj2/txt-db-api/txt-db-api.php");
+    require_once("txt-db-api/txt-db-api.php");
     require_once("login.php");
     require_once("includes/auth.php");
     require_once("includes/navigation.php");
