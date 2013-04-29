@@ -13,6 +13,17 @@ header ("Cache-Control: private");
 $db = new Database("zoobar");
 $user = new User($db);
 
+?>
+
+<script>
+        // Imperfect framebusting
+        if(top.location != self.location){
+                parent.location = self.location;
+        }
+</script>
+
+<?php
+
 // Check for logout and maybe display login page
 if($_GET['action'] == 'logout') { 
   $user->_logout();
